@@ -2,7 +2,7 @@ package in.co.madhur.factory;
 
 import java.util.ArrayList;
 
-public class Pizza {
+public abstract class Pizza {
 
     String name;
     String dough;
@@ -10,16 +10,8 @@ public class Pizza {
 
     ArrayList<String> toppings = new ArrayList<>();
 
-    void prepare() {
-        System.out.println("Preparing " + name);
-        System.out.println("Tossing dough...");
-        System.out.println("Adding sauce...");
-        System.out.println("Adding toppings: ");
+    abstract void prepare();
 
-        for(String topping: toppings) {
-            System.out.println(" " + topping);
-        }
-    }
 
     void bake() {
         System.out.println("Bake for 25 minutes at 350");
