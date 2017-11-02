@@ -1,6 +1,6 @@
 package in.co.madhur.factory;
 
-public class ChicagoStyleCheesePizza extends Pizza {
+public abstract class ChicagoStyleCheesePizza extends Pizza {
 
     public ChicagoStyleCheesePizza() {
         name = "Chicago style Deep Dish Cheese Pizza";

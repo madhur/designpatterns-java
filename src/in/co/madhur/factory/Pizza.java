@@ -10,7 +10,7 @@ public abstract class Pizza {
 
     ArrayList<String> toppings = new ArrayList<>();
 
-    abstract void prepare();
+  //  abstract void prepare();
 
 
     void bake() {
